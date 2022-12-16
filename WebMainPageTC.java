@@ -2,7 +2,7 @@ package sample;
 import org.testng.annotations.Test;
 
 public class WebMainPageTC extends AndroidChromeTest {
-    // Dewanshu Asus vivobook pros
+    // Dewanshu Asus vivobook pros ok good night
 	
 	public void navigate_to_homepage_click_on_SetUrLocation() {
 
