@@ -1,10 +1,9 @@
 package sample;
 
-import org.testng.annotations.Test;
 
 public class WebMainPageTC extends AndroidChromeTest {
-    // Dewanshu Asus vivobook pro
-	@Test
+    // Dewanshu Asus vivobook pros
+	
 	public void navigate_to_homepage_click_on_SetUrLocation() {
 
 		webMainPage webMainPage = new webMainPage(driver);
