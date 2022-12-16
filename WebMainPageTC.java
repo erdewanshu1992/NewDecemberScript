@@ -1,5 +1,5 @@
 package sample;
-
+import org.testng.annotations.Test;
 
 public class WebMainPageTC extends AndroidChromeTest {
     // Dewanshu Asus vivobook pros
