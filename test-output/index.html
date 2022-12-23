@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">27 methods, 2 failed,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="BackArrowVerify">BackArrowVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="ChangeAddressVerify">ChangeAddressVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="AddToCartButtonClicked">AddToCartButtonClicked</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="Address">Address</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="BestSellersVerify">BestSellersVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="BuildingName">BuildingName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="ChangeButtonVerify">ChangeButtonVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="CheckoutButtonVerify">CheckoutButtonVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="CheckoutOnSchedulePageVerify">CheckoutOnSchedulePageVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="ClickOnSubmitButton">ClickOnSubmitButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="DoneButtonVerify">DoneButtonVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="MainCatSalonAtHome">MainCatSalonAtHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="PopUpVerify">PopUpVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="ProceedButtonVerify">ProceedButtonVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="RemoveButtonNoVerify">RemoveButtonNoVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="RemoveButtonVerify">RemoveButtonVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="SaveButtonVerify">SaveButtonVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="SavedAddressVerify">SavedAddressVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="SlotNoteAtButtonVerify">SlotNoteAtButtonVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="enterMobileNumber">enterMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="enterOTP">enterOTP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="enter_userAddress">enter_userAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="lostOfAllNormalSlotsVerify">lostOfAllNormalSlotsVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="lostOfAllPrimeTimeSlotsEveVerify">lostOfAllPrimeTimeSlotsEveVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="lostOfAllPrimeTimeSlotsMorVerify">lostOfAllPrimeTimeSlotsMorVerify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="lostOfAllSlotsDate">lostOfAllSlotsDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="web.WebMainPageTC" class="method navigator-link" hash-for-method="navigate_to_homepage_click_on_SetUrLocation">navigate_to_homepage_click_on_SetUrLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">web.WebMainPageTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BackArrowVerify">
+                  </a> <!-- BackArrowVerify -->
+                  <span class="method-name">BackArrowVerify</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt; is not clickable at point (15, 22). Other element would receive the click: &lt;div class=&quot;loader_sec&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.128)
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-56-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7a04ab7f-692a-492d-b873-f1cf0b4c83fe, clickElement {id=2a6ab0ab-6b78-4537-b439-9e9e18e98c4a}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /home/yesmadam/Desktop/Driv..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: /home/yesmadam/Desktop/Driv..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (7a04ab7f-692a-492d-b873-f1cf0b4c83fe)] -&gt; xpath: //i[@class=&apos;fa fa-angle-left&apos;]]
+Session ID: 7a04ab7f-692a-492d-b873-f1cf0b4c83fe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at web.webMainPage.BackArrowVerify(webMainPage.java:210)
+	at web.WebMainPageTC.BackArrowVerify(WebMainPageTC.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeAddressVerify">
+                  </a> <!-- ChangeAddressVerify -->
+                  <span class="method-name">ChangeAddressVerify</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;change_address&quot;&gt;...&lt;/span&gt; is not clickable at point (285, 116). Other element would receive the click: &lt;div class=&quot;loader_sec&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.128)
+Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-56-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7a04ab7f-692a-492d-b873-f1cf0b4c83fe, clickElement {id=559944ed-8c78-4ddc-b241-7ed21c1d4ac0}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /home/yesmadam/Desktop/Driv..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: /home/yesmadam/Desktop/Driv..., deviceName: vivo, platformName: android}, appium:deviceApiLevel: 27, appium:deviceManufacturer: vivo, appium:deviceModel: vivo 1908, appium:deviceName: OVINKFHATGIR6PBE, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1520, appium:deviceUDID: OVINKFHATGIR6PBE, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 8.1.0, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:viewportRect: {height: 1380, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Element: [[AndroidDriver: Chrome on ANDROID (7a04ab7f-692a-492d-b873-f1cf0b4c83fe)] -&gt; xpath: //span[@class=&apos;change_address&apos;]]
+Session ID: 7a04ab7f-692a-492d-b873-f1cf0b4c83fe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at web.webMainPage.ChangeAddressVerify(webMainPage.java:204)
+	at web.WebMainPageTC.ChangeAddressVerify(WebMainPageTC.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">web.WebMainPageTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToCartButtonClicked">
+                  </a> <!-- AddToCartButtonClicked -->
+                  <span class="method-name">AddToCartButtonClicked</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Address">
+                  </a> <!-- Address -->
+                  <span class="method-name">Address</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BestSellersVerify">
+                  </a> <!-- BestSellersVerify -->
+                  <span class="method-name">BestSellersVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BuildingName">
+                  </a> <!-- BuildingName -->
+                  <span class="method-name">BuildingName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangeButtonVerify">
+                  </a> <!-- ChangeButtonVerify -->
+                  <span class="method-name">ChangeButtonVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckoutButtonVerify">
+                  </a> <!-- CheckoutButtonVerify -->
+                  <span class="method-name">CheckoutButtonVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckoutOnSchedulePageVerify">
+                  </a> <!-- CheckoutOnSchedulePageVerify -->
+                  <span class="method-name">CheckoutOnSchedulePageVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickOnSubmitButton">
+                  </a> <!-- ClickOnSubmitButton -->
+                  <span class="method-name">ClickOnSubmitButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DoneButtonVerify">
+                  </a> <!-- DoneButtonVerify -->
+                  <span class="method-name">DoneButtonVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MainCatSalonAtHome">
+                  </a> <!-- MainCatSalonAtHome -->
+                  <span class="method-name">MainCatSalonAtHome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PopUpVerify">
+                  </a> <!-- PopUpVerify -->
+                  <span class="method-name">PopUpVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProceedButtonVerify">
+                  </a> <!-- ProceedButtonVerify -->
+                  <span class="method-name">ProceedButtonVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RemoveButtonNoVerify">
+                  </a> <!-- RemoveButtonNoVerify -->
+                  <span class="method-name">RemoveButtonNoVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RemoveButtonVerify">
+                  </a> <!-- RemoveButtonVerify -->
+                  <span class="method-name">RemoveButtonVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveButtonVerify">
+                  </a> <!-- SaveButtonVerify -->
+                  <span class="method-name">SaveButtonVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SavedAddressVerify">
+                  </a> <!-- SavedAddressVerify -->
+                  <span class="method-name">SavedAddressVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SlotNoteAtButtonVerify">
+                  </a> <!-- SlotNoteAtButtonVerify -->
+                  <span class="method-name">SlotNoteAtButtonVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterMobileNumber">
+                  </a> <!-- enterMobileNumber -->
+                  <span class="method-name">enterMobileNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterOTP">
+                  </a> <!-- enterOTP -->
+                  <span class="method-name">enterOTP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enter_userAddress">
+                  </a> <!-- enter_userAddress -->
+                  <span class="method-name">enter_userAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lostOfAllNormalSlotsVerify">
+                  </a> <!-- lostOfAllNormalSlotsVerify -->
+                  <span class="method-name">lostOfAllNormalSlotsVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lostOfAllPrimeTimeSlotsEveVerify">
+                  </a> <!-- lostOfAllPrimeTimeSlotsEveVerify -->
+                  <span class="method-name">lostOfAllPrimeTimeSlotsEveVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lostOfAllPrimeTimeSlotsMorVerify">
+                  </a> <!-- lostOfAllPrimeTimeSlotsMorVerify -->
+                  <span class="method-name">lostOfAllPrimeTimeSlotsMorVerify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lostOfAllSlotsDate">
+                  </a> <!-- lostOfAllSlotsDate -->
+                  <span class="method-name">lostOfAllSlotsDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigate_to_homepage_click_on_SetUrLocation">
+                  </a> <!-- navigate_to_homepage_click_on_SetUrLocation -->
+                  <span class="method-name">navigate_to_homepage_click_on_SetUrLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/tmp/testng-eclipse--708304565/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;web.WebMainPageTC&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(27);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'lostOfAllSlotsDate')
+data.setCell(0, 2, 'web.WebMainPageTC')
+data.setCell(0, 3, 25074);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ChangeAddressVerify')
+data.setCell(1, 2, 'web.WebMainPageTC')
+data.setCell(1, 3, 6866);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'BuildingName')
+data.setCell(2, 2, 'web.WebMainPageTC')
+data.setCell(2, 3, 6606);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'enter_userAddress')
+data.setCell(3, 2, 'web.WebMainPageTC')
+data.setCell(3, 3, 6539);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'enterMobileNumber')
+data.setCell(4, 2, 'web.WebMainPageTC')
+data.setCell(4, 3, 6467);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'MainCatSalonAtHome')
+data.setCell(5, 2, 'web.WebMainPageTC')
+data.setCell(5, 3, 6461);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Address')
+data.setCell(6, 2, 'web.WebMainPageTC')
+data.setCell(6, 3, 5326);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'lostOfAllNormalSlotsVerify')
+data.setCell(7, 2, 'web.WebMainPageTC')
+data.setCell(7, 3, 5322);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'lostOfAllPrimeTimeSlotsEveVerify')
+data.setCell(8, 2, 'web.WebMainPageTC')
+data.setCell(8, 3, 5279);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'lostOfAllPrimeTimeSlotsMorVerify')
+data.setCell(9, 2, 'web.WebMainPageTC')
+data.setCell(9, 3, 5246);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'SlotNoteAtButtonVerify')
+data.setCell(10, 2, 'web.WebMainPageTC')
+data.setCell(10, 3, 5165);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'BestSellersVerify')
+data.setCell(11, 2, 'web.WebMainPageTC')
+data.setCell(11, 3, 5117);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'ChangeButtonVerify')
+data.setCell(12, 2, 'web.WebMainPageTC')
+data.setCell(12, 3, 4566);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CheckoutButtonVerify')
+data.setCell(13, 2, 'web.WebMainPageTC')
+data.setCell(13, 3, 1586);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'BackArrowVerify')
+data.setCell(14, 2, 'web.WebMainPageTC')
+data.setCell(14, 3, 1381);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'enterOTP')
+data.setCell(15, 2, 'web.WebMainPageTC')
+data.setCell(15, 3, 911);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'AddToCartButtonClicked')
+data.setCell(16, 2, 'web.WebMainPageTC')
+data.setCell(16, 3, 772);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'PopUpVerify')
+data.setCell(17, 2, 'web.WebMainPageTC')
+data.setCell(17, 3, 717);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'DoneButtonVerify')
+data.setCell(18, 2, 'web.WebMainPageTC')
+data.setCell(18, 3, 681);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'navigate_to_homepage_click_on_SetUrLocation')
+data.setCell(19, 2, 'web.WebMainPageTC')
+data.setCell(19, 3, 611);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'SaveButtonVerify')
+data.setCell(20, 2, 'web.WebMainPageTC')
+data.setCell(20, 3, 512);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'ProceedButtonVerify')
+data.setCell(21, 2, 'web.WebMainPageTC')
+data.setCell(21, 3, 484);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'ClickOnSubmitButton')
+data.setCell(22, 2, 'web.WebMainPageTC')
+data.setCell(22, 3, 449);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'RemoveButtonNoVerify')
+data.setCell(23, 2, 'web.WebMainPageTC')
+data.setCell(23, 3, 361);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'RemoveButtonVerify')
+data.setCell(24, 2, 'web.WebMainPageTC')
+data.setCell(24, 3, 360);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'CheckoutOnSchedulePageVerify')
+data.setCell(25, 2, 'web.WebMainPageTC')
+data.setCell(25, 3, 344);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'SavedAddressVerify')
+data.setCell(26, 2, 'web.WebMainPageTC')
+data.setCell(26, 3, 220);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">web.WebMainPageTC</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">webBrowserlaunch</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">navigate_to_homepage_click_on_SetUrLocation</span>
+                <span class="method-start">36189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enter_userAddress</span>
+                <span class="method-start">36823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MainCatSalonAtHome</span>
+                <span class="method-start">43370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BestSellersVerify</span>
+                <span class="method-start">49839 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddToCartButtonClicked</span>
+                <span class="method-start">54962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckoutButtonVerify</span>
+                <span class="method-start">55741 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterMobileNumber</span>
+                <span class="method-start">57333 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ClickOnSubmitButton</span>
+                <span class="method-start">63805 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterOTP</span>
+                <span class="method-start">64266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ChangeButtonVerify</span>
+                <span class="method-start">65179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DoneButtonVerify</span>
+                <span class="method-start">69749 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RemoveButtonVerify</span>
+                <span class="method-start">70436 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RemoveButtonNoVerify</span>
+                <span class="method-start">70802 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckoutOnSchedulePageVerify</span>
+                <span class="method-start">71168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BuildingName</span>
+                <span class="method-start">71518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Address</span>
+                <span class="method-start">78129 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SaveButtonVerify</span>
+                <span class="method-start">83459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangeAddressVerify</span>
+                <span class="method-start">83974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BackArrowVerify</span>
+                <span class="method-start">90848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SlotNoteAtButtonVerify</span>
+                <span class="method-start">92239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SavedAddressVerify</span>
+                <span class="method-start">97408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lostOfAllSlotsDate</span>
+                <span class="method-start">97633 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lostOfAllPrimeTimeSlotsMorVerify</span>
+                <span class="method-start">122709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lostOfAllNormalSlotsVerify</span>
+                <span class="method-start">127959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lostOfAllPrimeTimeSlotsEveVerify</span>
+                <span class="method-start">133285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProceedButtonVerify</span>
+                <span class="method-start">138569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PopUpVerify</span>
+                <span class="method-start">139057 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

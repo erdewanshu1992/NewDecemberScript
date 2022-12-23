@@ -1,4 +1,4 @@
-package sample;
+package web;
 
 import static org.testng.Assert.assertEquals;
 

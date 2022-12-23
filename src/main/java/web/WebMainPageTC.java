@@ -1,21 +1,20 @@
-package sample;
+package web;
+
 import org.testng.annotations.Test;
 
 public class WebMainPageTC extends AndroidChromeTest {
-    // Dewanshu Asus vivobook pros ok good night
-	
+	@Test
 	public void navigate_to_homepage_click_on_SetUrLocation() {
 
 		webMainPage webMainPage = new webMainPage(driver);
 		webMainPage.SetUrLocationButton();
 
 	}
-// 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 commit password
+
 	@Test(dependsOnMethods = { "navigate_to_homepage_click_on_SetUrLocation" })
 	public void enter_userAddress() throws InterruptedException {
 		webMainPage webMainPage = new webMainPage(driver);
 		webMainPage.enterAddressName("Noida sector 51");
-
 	}
 
 	@Test(priority = 3)
@@ -28,7 +27,6 @@ public class WebMainPageTC extends AndroidChromeTest {
 	public void BestSellersVerify() throws InterruptedException {
 		webMainPage webMainPage = new webMainPage(driver);
 		webMainPage.BestSellersVerify();
-
 	}
 
 	@Test(dependsOnMethods = { "BestSellersVerify" })
@@ -172,7 +170,6 @@ public class WebMainPageTC extends AndroidChromeTest {
 		webMainPage webMainPage = new webMainPage(driver);
 		webMainPage.ProceedButtonVerify();
 	}
-
 	@Test(priority = 30)
 	public void PopUpVerify() throws InterruptedException {
 		webMainPage webMainPage = new webMainPage(driver);
